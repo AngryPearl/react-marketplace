@@ -6,7 +6,7 @@ import CurrencySelector from "../Header/CurrencySelector/CurrencySelector";
 import IconMenu from "../Header/IconMenu/IconMenu";
 import CustomerControls from "../Header/CustomerControls/CustomerControls";
 import CategoriesMenu from "../Header/CategoriesMenu/CategoriesMenu";
-import { MainContent } from "../Homepage/MainContent/MainContent";
+import { MainContent } from "../MainPage/MainContent/MainContent";
 
 export default function Layout({ children }) {
   return (
