@@ -1,0 +1,10 @@
+h2 {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+.bestsellers {
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-start;
+}

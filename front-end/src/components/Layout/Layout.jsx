@@ -4,21 +4,26 @@ import Logo from "../Header/Logo/Logo";
 import MainMenu from "../Header/MainMenu/MainMenu";
 import CurrencySelector from "../Header/CurrencySelector/CurrencySelector";
 import IconMenu from "../Header/IconMenu/IconMenu";
+import CustomerControls from "../Header/CustomerControls/CustomerControls";
+import CategoriesMenu from "../Header/CategoriesMenu/CategoriesMenu";
+import { MainContent } from "../Content/MainContent/MainContent";
 
-function Layout() {
+export default function Layout({ children }) {
   return (
     <>
-      <TopBar>
-        <MainMenu />
-        <Logo />
-        <div>
-          <CurrencySelector />
-          <IconMenu />
-        </div>
-      </TopBar>
+      <MainContent>
+        <TopBar>
+          <MainMenu />
+          <Logo />
+          <CustomerControls>
+            <CurrencySelector />
+            <IconMenu />
+          </CustomerControls>
+        </TopBar>
+        <CategoriesMenu />
+        {children}
+      </MainContent>
       <Footer />
     </>
   );
 }
-
-export default Layout;
