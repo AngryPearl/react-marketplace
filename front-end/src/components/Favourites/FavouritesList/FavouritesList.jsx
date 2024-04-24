@@ -1,8 +1,19 @@
-export function FavouritesList() {
+import { CenteredContent } from "../../Common/CenteredContent/CenteredContent";
+import { FavouriteProduct } from "../FavouriteProduct/FavouriteProcut";
+import styles from "./FavouritesList.module.css";
+export function FavouritesList({ favourites }) {
   return (
-    <div>
-      <h2>Ulubione</h2>
-      <div></div>
-    </div>
+    <CenteredContent>
+      <div className={styles.list}>
+        <h2>Ulubione</h2>
+        <div>
+          {favourites.map((favourite) => {
+            return (
+              <FavouriteProduct key={favourite.id} favourite={favourite} />
+            );
+          })}
+        </div>
+      </div>
+    </CenteredContent>
   );
 }

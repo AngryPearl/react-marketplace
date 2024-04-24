@@ -1,6 +1,6 @@
 import styles from "./HeroBanner.module.css";
-import { CenteredContent } from "../CenteredContent/CenteredContent";
 import { FullWidthButton } from "../FullWidthButton/FullWidthButton";
+import { CenteredContent } from "../../Common/CenteredContent/CenteredContent";
 
 export function HeroBanner({ heroImage }) {
   return (
