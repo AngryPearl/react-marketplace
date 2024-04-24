@@ -1,7 +1,7 @@
-import { HeroBanner } from "../components/Content/HeroBanner/HeroBanner";
+import { HeroBanner } from "../components/Homepage/HeroBanner/HeroBanner";
 import Layout from "../components/Layout/Layout";
 import COVER_PHOTO from "../assets/HeroBanner.png";
-import { Bestsellers } from "../components/Content/Bestsellers/Bestsellers";
+import { Bestsellers } from "../components/Homepage/Bestsellers/Bestsellers";
 
 export function MainPage() {
   const products = [
