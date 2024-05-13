@@ -1,0 +1,7 @@
+.flexContainer {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 100rem;
+}

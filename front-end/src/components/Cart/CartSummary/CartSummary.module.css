@@ -1,0 +1,36 @@
+.cartSummary {
+  display: flex;
+  flex-direction: column;
+  padding-right: 1rem;
+  margin-top: 1rem;
+  width: 28rem;
+  gap: 1rem;
+}
+
+.cartSummary h2 {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--color-text-grey);
+}
+
+.cartRow {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+}
+
+.carRowSummary {
+  font-weight: 700;
+  padding-bottom: 0;
+}
+
+.checkoutButton {
+  background-color: var(--color-text-default);
+}
+
+.deliveryBox {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: var(--color-grey);
+  font-weight: 700;
+}
