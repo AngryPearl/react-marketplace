@@ -1,7 +1,7 @@
-import Layout from "../components/Layout/Layout";
+import { Breadcrumbs } from "../components/Common/Breadcrumbs/Breadcrumbs";
+import { ExpandableMenu } from "../components/Common/ExpandableMenu/ExpandableMenu";
 import { FlexContainer } from "../components/Common/FlexContainer/FlexContainer";
-import { Breadcrumbs } from "../components/ProductsList/Breadcrumbs/Breadcrumbs";
-import { ExpandableMenu } from "../components/ProductsList/ExpandableMenu/ExpandableMenu";
+import Layout from "../components/Layout/Layout";
 import { Pagination } from "../components/ProductsList/Pagination/Pagination";
 import { Products } from "../components/ProductsList/Products/Products";
 

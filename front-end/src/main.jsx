@@ -8,6 +8,7 @@ import { MainPage } from "./views/MainPage.jsx";
 import { Favourites } from "./views/Favorites.jsx";
 import { Cart } from "./views/Cart.jsx";
 import { ProductsList } from "./views/ProductsList.jsx";
+import { ProductDetails } from "./views/ProductDetails.jsx";
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
   {
     path: "/catalog",
     element: <ProductsList />,
+  },
+  {
+    path: "/product",
+    element: <ProductDetails />,
   },
 ]);
 

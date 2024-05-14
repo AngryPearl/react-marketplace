@@ -1,6 +1,6 @@
-import styles from "./Breadcrumbs.module.css";
 import { NavLink } from "react-router-dom";
 import ARROW from "./../../../assets/arrow.svg";
+import styles from "./Breadcrumbs.module.css";
 
 export function Breadcrumbs() {
   const breadcrumbs = [

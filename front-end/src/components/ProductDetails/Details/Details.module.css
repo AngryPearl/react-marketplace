@@ -1,0 +1,26 @@
+.details {
+  display: flex;
+  flex-direction: column;
+}
+
+.productName {
+  font-weight: 700;
+  margin: 0.5rem 0;
+}
+
+.price {
+  color: var(--color-price);
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.extraInfo {
+  margin: 2rem 0;
+}
+
+.extraInfo li {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}

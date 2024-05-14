@@ -1,6 +1,6 @@
-import styles from "./CartSummary.module.css";
 import CAR from "../../../assets/car.svg";
-import { FullWidthButton } from "../../MainPage/FullWidthButton/FullWidthButton";
+import { FullWidthButton } from "../.././Common/FullWidthButton/FullWidthButton";
+import styles from "./CartSummary.module.css";
 
 export function CartSummary({ cartProducts }) {
   const minValueForFreeDelivery = 500;
