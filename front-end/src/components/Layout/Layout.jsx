@@ -1,14 +1,14 @@
-import TopBar from "../Header/TopBar/TopBar";
+import { Outlet } from "react-router-dom";
 import Footer from "../Footer/Footer";
+import CategoriesMenu from "../Header/CategoriesMenu/CategoriesMenu";
+import CurrencySelector from "../Header/CurrencySelector/CurrencySelector";
+import CustomerControls from "../Header/CustomerControls/CustomerControls";
+import IconMenu from "../Header/IconMenu/IconMenu";
 import Logo from "../Header/Logo/Logo";
 import MainMenu from "../Header/MainMenu/MainMenu";
-import CurrencySelector from "../Header/CurrencySelector/CurrencySelector";
-import IconMenu from "../Header/IconMenu/IconMenu";
-import CustomerControls from "../Header/CustomerControls/CustomerControls";
-import CategoriesMenu from "../Header/CategoriesMenu/CategoriesMenu";
+import TopBar from "../Header/TopBar/TopBar";
 import { MainContent } from "../MainPage/MainContent/MainContent";
-
-export default function Layout({ children }) {
+export default function Layout() {
   return (
     <>
       <MainContent>
@@ -21,7 +21,7 @@ export default function Layout({ children }) {
           </CustomerControls>
         </TopBar>
         <CategoriesMenu />
-        {children}
+        <Outlet />
       </MainContent>
       <Footer />
     </>

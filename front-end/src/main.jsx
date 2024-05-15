@@ -1,35 +1,42 @@
-import "./styles/theme.css";
 import "./styles/globals.css";
+import "./styles/theme.css";
 
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { MainPage } from "./views/MainPage.jsx";
-import { Favourites } from "./views/Favorites.jsx";
+import Layout from "./components/Layout/Layout.jsx";
 import { Cart } from "./views/Cart.jsx";
-import { ProductsList } from "./views/ProductsList.jsx";
+import { Favourites } from "./views/Favorites.jsx";
+import { MainPage } from "./views/MainPage.jsx";
 import { ProductDetails } from "./views/ProductDetails.jsx";
+import { ProductsList } from "./views/ProductsList.jsx";
 
 const router = createBrowserRouter([
   {
-    path: "/",
-    element: <MainPage />,
-  },
-  {
-    path: "/favourites",
-    element: <Favourites />,
-  },
-  {
-    path: "/cart",
-    element: <Cart />,
-  },
-  {
-    path: "/catalog",
-    element: <ProductsList />,
-  },
-  {
-    path: "/product",
-    element: <ProductDetails />,
+    path: "",
+    element: <Layout />,
+    children: [
+      {
+        path: "/",
+        element: <MainPage />,
+      },
+      {
+        path: "/favourites",
+        element: <Favourites />,
+      },
+      {
+        path: "/cart",
+        element: <Cart />,
+      },
+      {
+        path: "/catalog",
+        element: <ProductsList />,
+      },
+      {
+        path: "/product",
+        element: <ProductDetails />,
+      },
+    ],
   },
 ]);
 

@@ -9,12 +9,12 @@ export default function IconMenu() {
   return (
     <ul className={styles.iconMenu}>
       <li>
-        <Link to="/ulubione">
+        <Link to="/favourites">
           <img src={HEART} />
         </Link>
       </li>
       <li>
-        <Link to="/koszyk">
+        <Link to="/cart">
           <img src={BAG_ICON} />
           <div className={styles.numberOfProducts}>{cartItems}</div>
         </Link>

@@ -1,18 +1,6 @@
 import { FavouritesList } from "../components/Favourites/FavouritesList/FavouritesList";
-import Layout from "../components/Layout/Layout";
 
 const favourites = [
-  {
-    productId: 1,
-    id: 1,
-  },
-  {
-    productId: 2,
-    id: 2,
-  },
-];
-
-const fav = [
   {
     id: 1,
     gender: "men",
@@ -54,9 +42,5 @@ const fav = [
 ];
 
 export function Favourites() {
-  return (
-    <Layout>
-      <FavouritesList favourites={fav} />
-    </Layout>
-  );
+  return <FavouritesList favourites={favourites} />;
 }

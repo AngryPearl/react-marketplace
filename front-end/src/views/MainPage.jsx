@@ -1,5 +1,4 @@
 import { HeroBanner } from "../components/MainPage/HeroBanner/HeroBanner";
-import Layout from "../components/Layout/Layout";
 import COVER_PHOTO from "../assets/HeroBanner.png";
 import { Bestsellers } from "../components/MainPage/Bestsellers/Bestsellers";
 
@@ -83,9 +82,9 @@ export function MainPage() {
     },
   ];
   return (
-    <Layout>
+    <>
       <HeroBanner heroImage={COVER_PHOTO} />
       <Bestsellers products={products} />
-    </Layout>
+    </>
   );
 }
