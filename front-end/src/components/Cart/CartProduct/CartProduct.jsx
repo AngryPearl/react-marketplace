@@ -1,5 +1,6 @@
-import styles from "./CartProduct.module.css";
 import REMOVE_ICON from "../../../assets/remove.svg";
+import { ProductPrice } from "../../Common/ProductPrice/ProductPrice";
+import styles from "./CartProduct.module.css";
 
 export function CartProduct({ cartProduct }) {
   return (
@@ -10,11 +11,13 @@ export function CartProduct({ cartProduct }) {
           <h3>
             {cartProduct.brand} {cartProduct.productName}
           </h3>
-          <p>{cartProduct.pricePLN}zł</p>
+          <p>
+            <ProductPrice product={cartProduct} />
+          </p>
         </div>
         <p className={styles.detailsPrice}>
           <span>Cena: </span>
-          {cartProduct.pricePLN}zł
+          <ProductPrice product={cartProduct} />
         </p>
         <div className={styles.detailsButtons}>
           <button>

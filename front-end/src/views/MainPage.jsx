@@ -1,6 +1,6 @@
 import { useLoaderData } from "react-router-dom";
-import { Bestsellers } from "../components/MainPage/Bestsellers/Bestsellers";
 import { HeroBanner } from "../components/MainPage/HeroBanner/HeroBanner";
+import { Products } from "../components/ProductsList/Products/Products";
 
 export function MainPage() {
   const { bestsellers, heroImageUrl } = useLoaderData();
@@ -8,7 +8,10 @@ export function MainPage() {
   return (
     <>
       <HeroBanner heroImage={heroImageUrl} />
-      <Bestsellers products={bestsellers} />
+      <Products
+        products={bestsellers}
+        headerText={"Sprawdź nasze bestellery"}
+      />
     </>
   );
 }

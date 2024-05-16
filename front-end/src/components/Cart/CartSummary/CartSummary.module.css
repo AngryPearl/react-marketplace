@@ -3,34 +3,28 @@
   flex-direction: column;
   padding-right: 1rem;
   margin-top: 1rem;
-  width: 28rem;
   gap: 1rem;
+  width: 28rem;
 }
 
 .cartSummary h2 {
-  padding-bottom: 1rem;
   border-bottom: 1px solid var(--color-text-grey);
+  padding-bottom: 1rem;
 }
 
 .cartRow {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 1rem;
 }
 
-.carRowSummary {
+.cartSummaryRow {
   font-weight: 700;
-  padding-bottom: 0;
 }
 
-.checkoutButton {
-  background-color: var(--color-text-default);
-}
-
-.deliveryBox {
+.deliveryInfo {
   display: flex;
   justify-content: space-between;
   padding: 1rem;
-  background-color: var(--color-grey);
   font-weight: 700;
+  background-color: var(--color-grey);
 }
