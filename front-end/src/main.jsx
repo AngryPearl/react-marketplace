@@ -3,7 +3,9 @@ import "./styles/theme.css";
 
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { mainPageLoader } from "./api/mainPageLoader.js";
+import { productListLoader } from "./api/productListLoader.js";
 import Layout from "./components/Layout/Layout.jsx";
 import { Cart } from "./views/Cart.jsx";
 import { Favourites } from "./views/Favorites.jsx";
@@ -17,7 +19,8 @@ const router = createBrowserRouter([
     element: <Layout />,
     children: [
       {
-        path: "/",
+        path: "/:gender?", // ?
+        loader: mainPageLoader,
         element: <MainPage />,
       },
       {
@@ -29,7 +32,8 @@ const router = createBrowserRouter([
         element: <Cart />,
       },
       {
-        path: "/catalog",
+        path: "/:gender/:category/:subcategory?",
+        loader: productListLoader,
         element: <ProductsList />,
       },
       {
