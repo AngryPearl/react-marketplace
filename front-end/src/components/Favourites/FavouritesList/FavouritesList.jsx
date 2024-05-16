@@ -1,5 +1,5 @@
 import { CenteredContent } from "../../Common/CenteredContent/CenteredContent";
-import { FavouriteProduct } from "../FavouriteProduct/FavouriteProcut";
+import { FavouriteProduct } from "../FavouriteProduct/FavouriteProduct";
 import styles from "./FavouritesList.module.css";
 export function FavouritesList({ favourites }) {
   return (
