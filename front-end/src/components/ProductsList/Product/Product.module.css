@@ -32,3 +32,7 @@
 .heart:hover {
   background-image: url("../../../assets/heart-full.svg");
 }
+
+.product button {
+  border: none;
+}

@@ -4,6 +4,9 @@ import "./styles/theme.css";
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { addProductToFavouritesAction } from "./api/addProductToFavouritesAction.js";
+import { deleteProductFromFavouritesAction } from "./api/deleteProductFromFavouritesAction.js";
+import { favouritesLoader } from "./api/favouritesLoader.js";
 import { mainPageLoader } from "./api/mainPageLoader.js";
 import { productListLoader } from "./api/productListLoader.js";
 import { productLoader } from "./api/productLoader.js";
@@ -16,6 +19,14 @@ import { ProductsList } from "./views/ProductsList.jsx";
 
 const router = createBrowserRouter([
   {
+    path: "/add-to-favoritues/:productId",
+    action: addProductToFavouritesAction,
+  },
+  {
+    path: "/delete-from-favoritues/:productId",
+    action: deleteProductFromFavouritesAction,
+  },
+  {
     path: "",
     element: <Layout />,
     children: [
@@ -26,6 +37,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/favourites",
+        loader: favouritesLoader,
         element: <Favourites />,
       },
       {
