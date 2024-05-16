@@ -19,7 +19,7 @@ const router = createBrowserRouter([
     element: <Layout />,
     children: [
       {
-        path: "/:gender?", // ?
+        path: "/:gender?",
         loader: mainPageLoader,
         element: <MainPage />,
       },

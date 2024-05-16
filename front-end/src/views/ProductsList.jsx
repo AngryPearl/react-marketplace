@@ -7,7 +7,7 @@ import { Products } from "../components/ProductsList/Products/Products";
 import { CATEGORIES } from "../constants/categories";
 
 export function ProductsList() {
-  const products = useLoaderData();
+  const { products, numberOfPages } = useLoaderData();
   const params = useParams();
   const foundCategory = CATEGORIES.find((c) => c.path === params.category);
   let foundSubcategory;
@@ -30,7 +30,7 @@ export function ProductsList() {
               : foundCategory.categoryName
           }
         />
-        <Pagination numberOfPages={5} />
+        <Pagination numberOfPages={numberOfPages} />
       </div>
     </FlexContainer>
   );
