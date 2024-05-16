@@ -6,6 +6,7 @@ import ReactDOM from "react-dom/client";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { mainPageLoader } from "./api/mainPageLoader.js";
 import { productListLoader } from "./api/productListLoader.js";
+import { productLoader } from "./api/productLoader.js";
 import Layout from "./components/Layout/Layout.jsx";
 import { Cart } from "./views/Cart.jsx";
 import { Favourites } from "./views/Favorites.jsx";
@@ -37,7 +38,8 @@ const router = createBrowserRouter([
         element: <ProductsList />,
       },
       {
-        path: "/product",
+        path: "/:gender/:category/:subcategory/:productId",
+        loader: productLoader,
         element: <ProductDetails />,
       },
     ],

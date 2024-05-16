@@ -1,5 +1,5 @@
-import { Product } from "../Product/Product";
 import { CenteredContent } from "../../Common/CenteredContent/CenteredContent";
+import { Product } from "../Product/Product";
 import styles from "./Products.module.css";
 
 export function Products({ products, headerText }) {
