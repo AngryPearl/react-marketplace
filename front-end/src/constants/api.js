@@ -10,4 +10,4 @@ export const PATH_TO_GENDER_NAME = {
   dziecko: "Dziecko",
 };
 
-export const BACKEND_URL = "http://localhost:3000";
+export const BACKEND_URL = "https://react-marketplace.onrender.com";
